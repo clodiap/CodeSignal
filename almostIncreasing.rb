@@ -36,7 +36,6 @@
 # end
 
 def almostIncreasingSequence(sequence)
-  p "*" *60
   counter = 0
   biggest_value = -10 ** 5 # valeur la plus basse de l'exo
   second_biggest_value = biggest_value
@@ -62,22 +61,39 @@ end
 p almostIncreasingSequence([1, 3, 2]) # true
 p almostIncreasingSequence([1, 2, 3, 4, 3, 6]) # true
 p almostIncreasingSequence([3, 5, 67, 98, 3]) # true
-
 p almostIncreasingSequence([1, 1, 2, 3, 4, 4]) # false
 p almostIncreasingSequence([1, 3, 2, 1]) # false
-
-# cas particuliers
-
-# cas ou counter = 1 mais false qd même
 p almostIncreasingSequence([40, 50, 60, 10, 20, 30]) # false
 p almostIncreasingSequence([1, 2, 1, 2]) # false
 p almostIncreasingSequence([1, 2, 3, 4, 5, 3, 5, 6]) # false
-
-# élément à enlever au début
 p almostIncreasingSequence([10, 1, 2, 3, 4, 5]) # true
-p almostIncreasingSequence([123, -17, -5, 1, 2, 3, 12, 43, 45]) # true
-
-
-# élément à enlever en position -3
-p almostIncreasingSequence([1, 2, 5, 3, 5]) # true
 p almostIncreasingSequence([1, 2, 3, 4, 99, 5, 6]) # true
+
+# autres solutions sur codewars :
+
+# def almost_increasing_sequence(seq)
+#   seq.combination(seq.size-1).any?{|s| s==s.sort && s==s.uniq}
+# end
+
+# def almost_increasing_sequence(sequence)
+#   sequence.each_with_index.any? do |_item, _index|
+#     seq = sequence.dup
+#     seq.delete_at(_index)
+#     # binding.irb
+#     increased_sequence?(seq)
+#   end
+# end
+# def increased_sequence?(array)
+#   array.each_cons(2).all? { |x, y| y > x }
+# end
+
+# def almost_increasing_sequence(seq)
+#   seq.each_index do |i|
+#     arr = seq.clone
+#     arr.delete_at(i)
+#     return true if arr.each_cons(2).all? {|a,b| a<b}
+#   end
+#   false
+# end
+
+
