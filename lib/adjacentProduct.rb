@@ -16,5 +16,3 @@ def adjacentElementsProduct(inputArray)
   end
   return sum.max
 end
-
-p adjacentElementsProduct([-23, 4, -3, 8, -12])
