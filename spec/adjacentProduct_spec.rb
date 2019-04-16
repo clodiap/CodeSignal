@@ -6,5 +6,3 @@ describe "adjacentElementsProduct" do
     expect(adjacentElementsProduct([-23, 4, -3, 8, -12])).to eq(-12)
   end
 end
-
-
