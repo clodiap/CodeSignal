@@ -58,16 +58,6 @@ def almostIncreasingSequence(sequence)
 
 end
 
-p almostIncreasingSequence([1, 3, 2]) # true
-p almostIncreasingSequence([1, 2, 3, 4, 3, 6]) # true
-p almostIncreasingSequence([3, 5, 67, 98, 3]) # true
-p almostIncreasingSequence([1, 1, 2, 3, 4, 4]) # false
-p almostIncreasingSequence([1, 3, 2, 1]) # false
-p almostIncreasingSequence([40, 50, 60, 10, 20, 30]) # false
-p almostIncreasingSequence([1, 2, 1, 2]) # false
-p almostIncreasingSequence([1, 2, 3, 4, 5, 3, 5, 6]) # false
-p almostIncreasingSequence([10, 1, 2, 3, 4, 5]) # true
-p almostIncreasingSequence([1, 2, 3, 4, 99, 5, 6]) # true
 
 # autres solutions sur codewars :
 
