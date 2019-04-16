@@ -7,7 +7,7 @@
 
 # Ratiorg needs statues of sizes 4, 5 and 7.
 
-def makeArrayConsecutive2(statues)
+def makeArrayConsecutive(statues)
   statues.sort!
   diff = 0
   (statues.length-1).times do |i|
@@ -18,4 +18,4 @@ def makeArrayConsecutive2(statues)
   return diff
 end
 
-p makeArrayConsecutive2([6, 2, 3, 8])
+p makeArrayConsecutive([6, 2, 3, 8])
