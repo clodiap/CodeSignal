@@ -14,3 +14,27 @@ def commonCharacterCount(s1, s2)
   end
   return counter
 end
+
+# 2ème solution sans transformation en hash ni array
+
+def commonCharacterCount2(s1, s2)
+  counter = 0
+  while s1.length > 0
+    last_s1 = s1[-1]
+    s1.chop!
+    if s2.include?(last_s1)
+      counter += 1
+      s2.sub!(last_s1,'')
+    end
+  end
+  p counter
+end
+
+commonCharacterCount2("aabcc", "adcaa")
+
+# autres solutions :
+
+# def commonCharacterCount(s1, s2)
+#   s1.each_char.count { |c| s2.include?(c) && s2[c] = "" }
+# end
+
