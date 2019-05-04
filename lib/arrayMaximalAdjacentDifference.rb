@@ -14,7 +14,6 @@ def arrayMaximalAdjacentDifference(inputArray)
   inputArray.each_cons(2).to_a.map { |arr| arr.reduce{ |acc,nb| (acc - nb).abs }}.max
 end
 
-arrayMaximalAdjacentDifference([2, 4, 1, 0]) # 3
 
 # Other's solutions
 
