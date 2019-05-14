@@ -27,6 +27,6 @@ function evenDigitsOnly(n) {
 //     return !(n+'').match(/[13579]/)
 // }
 
-function evenDigitsOnly(n) {
-  return (n+"").split("").every(x=>x%2===0)
-}
+// function evenDigitsOnly(n) {
+//   return (n+"").split("").every(x=>x%2===0)
+// }
