@@ -15,3 +15,16 @@ end
 
 # Others' solutions
 
+# def alphabeticShift(inputString)
+#     return inputString = inputString.tr("a-yz","b-za")
+# end
+
+# def alphabeticShift(inputString)
+#     output = ""
+#     inputString.chars.each{|x| output << ((x.ord + 1 - 97) % 26 + 97).chr}
+#     output
+# end
+
+# def alphabeticShift(inputString)
+#     inputString.codepoints.map {|i| i+1 > "z".ord ? "a".ord : i+1}.map(&:chr).join
+# end
